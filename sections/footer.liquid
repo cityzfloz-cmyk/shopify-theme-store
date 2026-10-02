@@ -1,0 +1,38 @@
+<footer class="site-footer">
+  <div class="page-width footer-inner">
+    <div>
+      <a href="{{ routes.root_url }}" class="brand brand-footer">{{ shop.name }}</a>
+      <p>{{ shop.description | default: 'Thoughtful essentials for a refined everyday life.' }}</p>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Shop</h4>
+        <a href="{{ routes.all_products_collection_url }}">All products</a>
+        <a href="{{ routes.root_url }}">New arrivals</a>
+        <a href="{{ routes.root_url }}">Gift cards</a>
+      </div>
+      <div>
+        <h4>About</h4>
+        <a href="{{ routes.root_url }}">Our story</a>
+        <a href="{{ routes.root_url }}">Journal</a>
+        <a href="{{ routes.root_url }}">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom page-width">
+    <p>© {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.</p>
+    <div class="legal-links">
+      <a href="{{ routes.root_url }}">Privacy</a>
+      <a href="{{ routes.root_url }}">Terms</a>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": []
+}
+{% endschema %}

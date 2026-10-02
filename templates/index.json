@@ -1,0 +1,115 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "eyebrow": "Curated essentials",
+        "heading": "Luxury living for the modern home.",
+        "text": "Discover elevated pieces designed with thoughtful craftsmanship, soft textures, and timeless detail.",
+        "primary_button_label": "Shop collection",
+        "primary_button_link": "/collections/all",
+        "secondary_button_label": "Explore journal",
+        "secondary_button_link": "/pages/about"
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "settings": {
+        "heading": "Curated for inspired living"
+      },
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "category": "Living",
+            "title": "Soft Form",
+            "link_label": "Shop now",
+            "link_url": "/collections/all"
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "category": "Dining",
+            "title": "Morning Ritual",
+            "link_label": "Shop now",
+            "link_url": "/collections/all"
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "category": "Decor",
+            "title": "Quiet Luxury",
+            "link_label": "Shop now",
+            "link_url": "/collections/all"
+          }
+        }
+      },
+      "block_order": ["collection-1", "collection-2", "collection-3"]
+    },
+    "featured-products": {
+      "type": "featured-products",
+      "settings": {
+        "heading": "Crafted to be lived with",
+        "button_label": "View all",
+        "button_link": "/collections/all",
+        "product_limit": 4
+      }
+    },
+    "feature-band": {
+      "type": "feature-band",
+      "settings": {
+        "heading": "Designed with intention. Made to last.",
+        "text": "From material choices to finishing details, every piece is considered for everyday rituals and timeless spaces.",
+        "link_label": "Learn more",
+        "link_url": "/pages/about"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {
+        "heading": "Loved by those who appreciate the detail"
+      },
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The quality is exceptional and the styling feels truly elevated.",
+            "author": "Alicia M."
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Every piece feels considered, warm, and enduring.",
+            "author": "Noah T."
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Our home has never felt more refined and personal.",
+            "author": "Olivia R."
+          }
+        }
+      },
+      "block_order": ["testimonial-1", "testimonial-2", "testimonial-3"]
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "heading": "Receive fresh arrivals and private offers",
+        "button_label": "Join now"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "featured-collections",
+    "featured-products",
+    "feature-band",
+    "testimonials",
+    "newsletter"
+  ]
+}

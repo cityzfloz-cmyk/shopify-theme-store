@@ -1,0 +1,51 @@
+<section class="testimonials section-space">
+  <div class="page-width">
+    <div class="section-heading">
+      <p class="eyebrow">Client notes</p>
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+
+    <div class="testimonial-grid">
+      {% for block in section.blocks %}
+        <blockquote class="testimonial-card" {{ block.shopify_attributes }}>
+          <p>“{{ block.settings.quote }}”</p>
+          <footer>{{ block.settings.author }}</footer>
+        </blockquote>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Loved by those who appreciate the detail"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        { "type": "textarea", "id": "quote", "label": "Quote", "default": "The quality is exceptional and the styling feels truly elevated." },
+        { "type": "text", "id": "author", "label": "Author", "default": "Alicia M." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+        { "type": "testimonial", "settings": { "quote": "The quality is exceptional and the styling feels truly elevated.", "author": "Alicia M." } },
+        { "type": "testimonial", "settings": { "quote": "Every piece feels considered, warm, and enduring.", "author": "Noah T." } },
+        { "type": "testimonial", "settings": { "quote": "Our home has never felt more refined and personal.", "author": "Olivia R." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

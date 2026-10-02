@@ -1,0 +1,56 @@
+<section class="feature-band section-space">
+  <div class="page-width feature-band-inner">
+    <div class="feature-card">
+      <p class="eyebrow">The atelier</p>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.text }}</p>
+      <a href="{{ section.settings.link_url }}" class="button button-primary">{{ section.settings.link_label }}</a>
+    </div>
+    <div class="feature-image">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.heading | escape }}" loading="lazy">
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Feature band",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Designed with intention. Made to last."
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "From material choices to finishing details, every piece is considered for everyday rituals and timeless spaces."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Button label",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature band"
+    }
+  ]
+}
+{% endschema %}

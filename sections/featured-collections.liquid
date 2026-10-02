@@ -1,0 +1,60 @@
+<section class="featured-collections section-space">
+  <div class="page-width">
+    <div class="section-heading">
+      <p class="eyebrow">Collections</p>
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+
+    <div class="collections-grid">
+      {% for block in section.blocks %}
+        <article class="collection-card" {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title | escape }}" loading="lazy">
+          {% endif %}
+          <div class="collection-info">
+            <p>{{ block.settings.category }}</p>
+            <h3>{{ block.settings.title }}</h3>
+            <a href="{{ block.settings.link_url }}">{{ block.settings.link_label }}</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Featured collections",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Curated for inspired living"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "category", "label": "Category", "default": "Living" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Soft Form" },
+        { "type": "text", "id": "link_label", "label": "Link label", "default": "Shop now" },
+        { "type": "url", "id": "link_url", "label": "Link" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured collections",
+      "blocks": [
+        { "type": "collection", "settings": { "title": "Soft Form", "category": "Living" } },
+        { "type": "collection", "settings": { "title": "Morning Ritual", "category": "Dining" } },
+        { "type": "collection", "settings": { "title": "Quiet Luxury", "category": "Decor" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

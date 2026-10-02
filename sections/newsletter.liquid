@@ -1,0 +1,37 @@
+<section class="newsletter section-space">
+  <div class="page-width newsletter-box">
+    <div>
+      <p class="eyebrow">Private access</p>
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <form class="newsletter-form" action="{{ routes.root_url }}">
+      <input type="email" placeholder="Email address" aria-label="Email address">
+      <button type="submit" class="button button-primary">{{ section.settings.button_label }}</button>
+    </form>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Newsletter",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Receive fresh arrivals and private offers"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Join now"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Newsletter"
+    }
+  ]
+}
+{% endschema %}
