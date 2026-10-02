@@ -1,0 +1,143 @@
+<section class="cart-paypal section-space" data-section-id="{{ section.id }}" data-section-type="cart-paypal">
+  <div class="page-width">
+    <div class="cart-container">
+      <div class="cart-items">
+        <h1>Shopping Cart</h1>
+        
+        {% if cart.item_count > 0 %}
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in cart.items %}
+                <tr>
+                  <td>
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                  </td>
+                  <td>{{ item.price | money }}</td>
+                  <td>{{ item.quantity }}</td>
+                  <td>{{ item.final_line_price | money }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+
+          <div class="cart-summary">
+            <div class="summary-row">
+              <span>Subtotal:</span>
+              <span>{{ cart.total_price | money }}</span>
+            </div>
+            <div class="summary-row">
+              <span>Shipping & taxes calculated at checkout</span>
+            </div>
+          </div>
+        {% else %}
+          <p>Your cart is empty</p>
+        {% endif %}
+      </div>
+
+      <div class="cart-checkout">
+        <h2>Checkout Options</h2>
+        
+        {% if cart.item_count > 0 %}
+          <!-- Standard Shopify Checkout -->
+          <form action="/checkout" method="post" class="checkout-form">
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;">
+              Proceed to Checkout
+            </button>
+          </form>
+
+          <!-- PayPal Checkout Button -->
+          <div class="paypal-checkout-container">
+            <p class="checkout-divider">Or pay with:</p>
+            <div id="paypal-container-FVAXW4QF8JD2G" style="margin-top: 1rem;"></div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://www.paypal.com/sdk/js?client-id=BAAJyg2U2LG-nz-sklDvag2gw4GTzmNGGxrqL9AjGiih9PiZIblFvpNRRuBM6aJSGRJ3H3BRL4Qnqstik0&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+<script>
+  window.addEventListener('load', function () {
+    if (window.paypal && typeof window.paypal.HostedButtons === 'function') {
+      paypal.HostedButtons({
+        hostedButtonId: 'FVAXW4QF8JD2G'
+      }).render('#paypal-container-FVAXW4QF8JD2G');
+    }
+  });
+</script>
+
+<style>
+  .cart-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .cart-summary {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+  }
+
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+  }
+
+  .cart-checkout {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 4px;
+    height: fit-content;
+  }
+
+  .checkout-form {
+    margin-bottom: 1.5rem;
+  }
+
+  .checkout-divider {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .cart-container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Cart with PayPal",
+  "tag": "section",
+  "class": "section",
+  "settings": []
+}
+{% endschema %}
