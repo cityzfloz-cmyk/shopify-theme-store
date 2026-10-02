@@ -1,0 +1,80 @@
+<section class="product-page" data-section-id="{{ section.id }}" data-section-type="product">
+  <div class="page-width product-grid">
+    {% if product.featured_image %}
+      <div class="product-gallery">
+        <img src="{{ product.featured_image | image_url: width: 1200 }}" alt="{{ product.title | escape }}" loading="eager">
+      </div>
+    {% endif %}
+
+    <div class="product-details">
+      {% if product.vendor %}
+        <p class="product-vendor">{{ product.vendor }}</p>
+      {% endif %}
+
+      <h1>{{ product.title }}</h1>
+
+      <div class="product-price" aria-live="polite">
+        {{ product.selected_or_first_available_variant.price | money }}
+      </div>
+
+      {% if product.description != blank %}
+        <div class="product-description">
+          {{ product.description }}
+        </div>
+      {% endif %}
+
+      {% form 'product', product, class: 'product-form' %}
+        {% unless product.has_only_default_variant %}
+          <div class="product-options">
+            {% for option in product.options_with_values %}
+              <div class="product-option">
+                <label for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
+                <select id="Option-{{ section.id }}-{{ forloop.index0 }}" name="options[{{ option.position | minus: 1 }}]">
+                  {% for value in option.values %}
+                    <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
+                      {{ value }}
+                    </option>
+                  {% endfor %}
+                </select>
+              </div>
+            {% endfor %}
+          </div>
+        {% endunless %}
+
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+        <button type="submit" name="add" class="btn btn-primary" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+          {% if product.selected_or_first_available_variant.available %}
+            Add to cart
+          {% else %}
+            Sold out
+          {% endif %}
+        </button>
+      {% endform %}
+
+      <div class="paypal-section" style="margin-top: 1rem;">
+        <div id="paypal-container-FVAXW4QF8JD2G"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://www.paypal.com/sdk/js?client-id=BAAJyg2U2LG-nz-sklDvag2gw4GTzmNGGxrqL9AjGiih9PiZIblFvpNRRuBM6aJSGRJ3H3BRL4Qnqstik0&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+<script>
+  window.addEventListener('load', function () {
+    if (window.paypal && typeof window.paypal.HostedButtons === 'function') {
+      paypal.HostedButtons({
+        hostedButtonId: 'FVAXW4QF8JD2G'
+      }).render('#paypal-container-FVAXW4QF8JD2G');
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Main product",
+  "tag": "section",
+  "class": "section",
+  "settings": []
+}
+{% endschema %}
