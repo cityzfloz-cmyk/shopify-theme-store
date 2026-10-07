@@ -81,6 +81,14 @@
         "link_url": "/pages/about"
       }
     },
+    "newsletter_daCGn3": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "heading": "Receive fresh arrivals and private offers",
+        "button_label": "Join now"
+      }
+    },
     "testimonials": {
       "type": "testimonials",
       "blocks": {
@@ -115,14 +123,11 @@
         "heading": "Loved by those who appreciate the detail"
       }
     },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "heading": "Receive fresh arrivals and private offers",
-        "button_label": "Join now"
-      }
-    },
     "179139664730a872c1": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "1791397194ed9867e7": {
       "type": "_blocks",
       "settings": {}
     }
@@ -132,8 +137,9 @@
     "featured-collections",
     "featured-products",
     "feature-band",
+    "newsletter_daCGn3",
     "testimonials",
-    "newsletter",
-    "179139664730a872c1"
+    "179139664730a872c1",
+    "1791397194ed9867e7"
   ]
 }
