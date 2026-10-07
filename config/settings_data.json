@@ -52,6 +52,27 @@
         "type": "shopify://apps/loyalty-palm/blocks/rewards-widget/019ed48c-c16e-7746-9669-c95e609d92de",
         "disabled": false,
         "settings": {}
+      },
+      "9911240685268195077": {
+        "type": "shopify://apps/loyalty-palm/blocks/cart-redeem-inline/019ed48c-c16e-7746-9669-c95e609d92de",
+        "disabled": false,
+        "settings": {
+          "redeem_label": "Redeem points",
+          "guest_copy": "Sign in or join to redeem rewards in your cart.",
+          "empty_program_label": "Choose a program",
+          "no_rewards_label": "No rewards are available for this cart.",
+          "external_discount_label": "Remove the current discount before applying a reward."
+        }
+      },
+      "12602507603489088603": {
+        "type": "shopify://apps/loyalty-palm/blocks/referral-popup/019ed48c-c16e-7746-9669-c95e609d92de",
+        "disabled": false,
+        "settings": {}
+      },
+      "5593647455234278814": {
+        "type": "shopify://apps/loyalty-palm/blocks/loyalty-nudges/019ed48c-c16e-7746-9669-c95e609d92de",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
