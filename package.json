@@ -1,0 +1,27 @@
+{
+  "name": "shopify-theme-store",
+  "version": "1.0.0",
+  "description": "A modern Shopify theme store with theme showcase, filtering, and management features",
+  "main": "index.js",
+  "scripts": {
+    "shopify:install": "npm install -g @shopify/cli @shopify/theme",
+    "shopify:login": "shopify auth login",
+    "shopify:dev": "shopify theme dev",
+    "shopify:push": "shopify theme push",
+    "shopify:list": "shopify theme list",
+    "shopify:pull": "shopify theme pull"
+  },
+  "keywords": [
+    "shopify",
+    "theme",
+    "store",
+    "liquid",
+    "css"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shopify/cli": "^3.0.0",
+    "@shopify/theme": "^3.0.0"
+  }
+}
