@@ -1,11 +1,21 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "hero",
       "settings": {
+        "image": "shopify://shop_images/DF982B73370D78AFECCABABF012BF203.jpg",
         "eyebrow": "Curated essentials",
-        "heading": "Luxury living for the modern home.",
-        "text": "Discover elevated pieces designed with thoughtful craftsmanship, soft textures, and timeless detail.",
+        "heading": "Set the scene for Halloween",
+        "text": "Bring a spooky touch to your Halloween display with our Black Witches’ Cauldron with Skeletons on Tripod.",
         "primary_button_label": "Shop collection",
         "primary_button_link": "/collections/all",
         "secondary_button_label": "Explore journal",
@@ -14,9 +24,6 @@
     },
     "featured-collections": {
       "type": "featured-collections",
-      "settings": {
-        "heading": "Curated for inspired living"
-      },
       "blocks": {
         "collection-1": {
           "type": "collection",
@@ -46,15 +53,23 @@
           }
         }
       },
-      "block_order": ["collection-1", "collection-2", "collection-3"]
+      "block_order": [
+        "collection-1",
+        "collection-2",
+        "collection-3"
+      ],
+      "settings": {
+        "heading": "Curated for inspired living"
+      }
     },
     "featured-products": {
       "type": "featured-products",
       "settings": {
         "heading": "Crafted to be lived with",
+        "collection": "",
+        "product_limit": 4,
         "button_label": "View all",
-        "button_link": "/collections/all",
-        "product_limit": 4
+        "button_link": "/collections/all"
       }
     },
     "feature-band": {
@@ -68,9 +83,6 @@
     },
     "testimonials": {
       "type": "testimonials",
-      "settings": {
-        "heading": "Loved by those who appreciate the detail"
-      },
       "blocks": {
         "testimonial-1": {
           "type": "testimonial",
@@ -94,7 +106,14 @@
           }
         }
       },
-      "block_order": ["testimonial-1", "testimonial-2", "testimonial-3"]
+      "block_order": [
+        "testimonial-1",
+        "testimonial-2",
+        "testimonial-3"
+      ],
+      "settings": {
+        "heading": "Loved by those who appreciate the detail"
+      }
     },
     "newsletter": {
       "type": "newsletter",
