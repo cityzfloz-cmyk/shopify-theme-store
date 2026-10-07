@@ -1,8 +1,53 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "announcement_text": "Free shipping on orders over $150",
     "color_primary": "#b68d4b",
     "color_background": "#f7f3ee",
-    "color_text": "#1d1d1b"
+    "color_text": "#1d1d1b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "menu": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {}
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "6159598353363395418": {
+        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
+        "disabled": false,
+        "settings": {
+          "widget_position": "LEFT_BOTTOM",
+          "side_margin": 36,
+          "bottom_margin": 36,
+          "mobile_side_margin": 16,
+          "mobile_bottom_margin": 46
+        }
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
+      "9877697698624376608": {
+        "type": "shopify://apps/mintt-free-gift/blocks/head-block/2d2d79ce-7d38-4ba0-a40c-209ef424cfce",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   }
 }
