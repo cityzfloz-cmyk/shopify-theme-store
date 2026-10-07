@@ -47,6 +47,11 @@
         "type": "shopify://apps/mintt-free-gift/blocks/head-block/2d2d79ce-7d38-4ba0-a40c-209ef424cfce",
         "disabled": false,
         "settings": {}
+      },
+      "12902230620780744548": {
+        "type": "shopify://apps/loyalty-palm/blocks/rewards-widget/019ed48c-c16e-7746-9669-c95e609d92de",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
