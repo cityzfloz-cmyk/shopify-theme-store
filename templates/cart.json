@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "main": {
+      "type": "cart-paypal",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}
