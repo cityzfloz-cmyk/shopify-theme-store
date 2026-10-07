@@ -59,14 +59,14 @@
         "collection-3"
       ],
       "settings": {
-        "heading": "Curated for inspired living"
+        "heading": "Discover your Halloween favourites"
       }
     },
     "featured-products": {
       "type": "featured-products",
       "settings": {
         "heading": "Crafted to be lived with",
-        "collection": "",
+        "collection": "frontpage",
         "product_limit": 4,
         "button_label": "View all",
         "button_link": "/collections/all"
@@ -121,6 +121,10 @@
         "heading": "Receive fresh arrivals and private offers",
         "button_label": "Join now"
       }
+    },
+    "179139664730a872c1": {
+      "type": "_blocks",
+      "settings": {}
     }
   },
   "order": [
@@ -129,6 +133,7 @@
     "featured-products",
     "feature-band",
     "testimonials",
-    "newsletter"
+    "newsletter",
+    "179139664730a872c1"
   ]
 }
