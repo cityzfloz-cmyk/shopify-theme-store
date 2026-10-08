@@ -12,5 +12,34 @@
     "market": "rest-of-world"
   },
   "parent": "index.json",
-  "sections": {}
+  "sections": {
+    "featured-collections": {
+      "settings": {},
+      "blocks": {
+        "collection_NkUDz": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "image": null,
+            "category": "Living",
+            "title": "Soft Form",
+            "link_label": "Shop now",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_NkUDz",
+        "collection-1",
+        "collection-2",
+        "collection-3"
+      ]
+    },
+    "hero": {
+      "settings": {
+        "primary_button_link": "shopify://collections/all"
+      },
+      "blocks": {}
+    }
+  }
 }

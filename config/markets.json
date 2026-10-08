@@ -11,6 +11,9 @@
   "markets": {
     "us": {
       "parent": "@default"
+    },
+    "rest-of-world": {
+      "parent": "@default"
     }
   }
 }
