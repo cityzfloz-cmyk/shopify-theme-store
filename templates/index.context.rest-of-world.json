@@ -40,6 +40,28 @@
         "primary_button_link": "shopify://collections/all"
       },
       "blocks": {}
+    },
+    "newsletter_bDqja": {
+      "type": "newsletter",
+      "disabled": false,
+      "settings": {
+        "heading": "Receive fresh arrivals and private offers",
+        "button_label": "Join now"
+      },
+      "blocks": {},
+      "block_order": [],
+      "name": "Newsletter"
     }
-  }
+  },
+  "order": [
+    "hero",
+    "featured-collections",
+    "featured-products",
+    "newsletter_bDqja",
+    "feature-band",
+    "newsletter_daCGn3",
+    "testimonials",
+    "179139664730a872c1",
+    "1791397194ed9867e7"
+  ]
 }
