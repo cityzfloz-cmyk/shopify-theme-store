@@ -20,53 +20,14 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "eyebrow": "Curated essentials",
-        "heading": "Luxury living for the modern home.",
-        "text": "Discover elevated pieces designed with thoughtful craftsmanship, soft textures, and timeless detail.",
+        "image": "shopify://shop_images/warm-neutral-interior-background-for-your-hero-banner.png",
+        "eyebrow": "Thoughtful Finds for Everyday Living",
+        "heading": "Infuse Wonder into Your Everyday Life",
+        "text": "Discover distinctive home decor, everyday essentials, and seasonal finds to brighten your space and make daily life a little more special",
         "primary_button_label": "Shop collection",
         "primary_button_link": "/collections/all",
         "secondary_button_label": "Explore journal",
         "secondary_button_link": "/pages/about"
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "category": "Living",
-            "title": "Soft Form",
-            "link_label": "Shop now",
-            "link_url": "/collections/all"
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "category": "Dining",
-            "title": "Morning Ritual",
-            "link_label": "Shop now",
-            "link_url": "/collections/all"
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "category": "Decor",
-            "title": "Quiet Luxury",
-            "link_label": "Shop now",
-            "link_url": "/collections/all"
-          }
-        }
-      },
-      "block_order": [
-        "collection-1",
-        "collection-2",
-        "collection-3"
-      ],
-      "settings": {
-        "heading": "Curated for inspired living"
       }
     },
     "featured_collections_x6CqxA": {
@@ -84,19 +45,19 @@
         "collection_zXEhFQ": {
           "type": "collection",
           "settings": {
-            "category": "Dining",
-            "title": "Morning Ritual",
+            "category": "Wall Decor",
+            "title": "Skeleton Helmet Wall Mount",
             "link_label": "Shop now",
-            "link_url": ""
+            "link_url": "shopify://products/15368257437805"
           }
         },
         "collection_UMethj": {
           "type": "collection",
           "settings": {
-            "category": "Decor",
-            "title": "Quiet Luxury",
+            "category": "Kids Clothing",
+            "title": "Boys’ Striped Joggers",
             "link_label": "Shop now",
-            "link_url": ""
+            "link_url": "shopify://products/15368259240045"
           }
         }
       },
@@ -107,7 +68,7 @@
       ],
       "name": "Featured collections",
       "settings": {
-        "heading": "Curated for inspired living"
+        "heading": ""
       }
     },
     "featured-products": {
@@ -174,7 +135,6 @@
   "order": [
     "newsletter_N4RHgn",
     "hero",
-    "featured-collections",
     "featured_collections_x6CqxA",
     "featured-products",
     "feature-band",
