@@ -137,7 +137,7 @@
         "ai_gen_block_006b809_xcgpqK": {
           "type": "ai_gen_block_006b809",
           "settings": {
-            "footer_menu": "",
+            "footer_menu": "footer",
             "navigation_label": "Footer policies and links",
             "desktop_width_percent": 100,
             "alignment": "center",
