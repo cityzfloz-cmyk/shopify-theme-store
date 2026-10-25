@@ -153,6 +153,27 @@
         "ai_gen_block_006b809_xcgpqK"
       ],
       "settings": {}
+    },
+    "1792942400a599b1d0": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8cee400_8DNQAD": {
+          "type": "ai_gen_block_8cee400",
+          "settings": {
+            "footer_menu": "footer",
+            "navigation_label": "Policy and useful links",
+            "empty_message": "Select a menu to show its links.",
+            "desktop_width_percent": 100,
+            "background_color": "#f7f3ee",
+            "text_color": "#1d1d1b"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8cee400_8DNQAD"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -163,6 +184,7 @@
     "feature-band",
     "testimonials",
     "newsletter",
-    "17929419319817eb97"
+    "17929419319817eb97",
+    "1792942400a599b1d0"
   ]
 }
