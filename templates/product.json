@@ -12,7 +12,28 @@
     "main": {
       "type": "main-product",
       "settings": {}
+    },
+    "179294263519a65d19": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f8b0004_4RebQB": {
+          "type": "ai_gen_block_f8b0004",
+          "settings": {
+            "policy_menu": "footer",
+            "alignment": "flex-start",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f8b0004_4RebQB"
+      ],
+      "settings": {}
     }
   },
-  "order": ["main"]
+  "order": [
+    "main",
+    "179294263519a65d19"
+  ]
 }
