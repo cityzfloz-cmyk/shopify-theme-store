@@ -75,7 +75,7 @@
       "type": "featured-products",
       "settings": {
         "heading": "Crafted to be lived with",
-        "collection": "",
+        "collection": "frontpage",
         "product_limit": 4,
         "button_label": "View all",
         "button_link": "/collections/all"
