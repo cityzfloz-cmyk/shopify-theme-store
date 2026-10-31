@@ -28,6 +28,7 @@
         "collection_6hibLx": {
           "type": "collection",
           "settings": {
+            "image": "shopify://shop_images/54C7B97FA479E8149A3109652069F900_c5993d9d-52ed-4229-ad60-bbdd9a48f3db.jpg",
             "category": "Lighting",
             "title": "Dragon Bookshelf Light",
             "link_label": "Shop now",
@@ -37,6 +38,7 @@
         "collection_zXEhFQ": {
           "type": "collection",
           "settings": {
+            "image": "shopify://shop_images/6F87D05DB9F97038F179BA0AAF51EAD7_21458bd5-0f1e-45e4-a56a-8f830a5701fb.jpg",
             "category": "Wall Decor",
             "title": "Skeleton Helmet Wall Mount",
             "link_label": "Shop now",
@@ -46,6 +48,7 @@
         "collection_UMethj": {
           "type": "collection",
           "settings": {
+            "image": "shopify://shop_images/2225156B934E1256F95B43A1541592C3_549b5fe0-5337-404f-8113-c85260ce1509.jpg",
             "category": "Kids Clothing",
             "title": "Boys’ Striped Joggers",
             "link_label": "Shop now",
