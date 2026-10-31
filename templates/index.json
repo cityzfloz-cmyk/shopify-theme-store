@@ -133,25 +133,6 @@
     },
     "17929419319817eb97": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_006b809_xcgpqK": {
-          "type": "ai_gen_block_006b809",
-          "settings": {
-            "footer_menu": "footer",
-            "navigation_label": "Footer policies and links",
-            "desktop_width_percent": 100,
-            "alignment": "center",
-            "text_size": 14,
-            "vertical_spacing": 8,
-            "text_color": "#1d1d1b",
-            "link_hover_color": "#b68d4b"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_006b809_xcgpqK"
-      ],
       "settings": {}
     },
     "1792942400a599b1d0": {
