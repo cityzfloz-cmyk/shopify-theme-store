@@ -20,6 +20,16 @@
 
     {{ 'theme.css' | asset_url | stylesheet_tag }}
     {{ 'theme.js' | asset_url | script_tag }}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18545389358">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+            gtag('config', 'AW-18545389358');
+            </script>
   </head>
   <body class="template-{{ request.page_type | handle }}">
     <a class="skip-link" href="#MainContent">Skip to content</a>
